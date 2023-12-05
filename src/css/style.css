@@ -26,6 +26,7 @@ Soyez attentifs à l'ordre d'import :
 /* Layout */
 @import url(layout/header.css);
 @import url(layout/footer.css);
+@import url(layout/titles.css);
 
 /* Components */
 @import url(components/menu.css);

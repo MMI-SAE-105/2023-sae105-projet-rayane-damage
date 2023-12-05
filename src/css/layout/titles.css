@@ -1,0 +1,6 @@
+.media__text {
+    font-family: var(--syncopate);
+    font-weight: 700;
+    font-size: var(--button);
+    letter-spacing: var(--btn);
+}
