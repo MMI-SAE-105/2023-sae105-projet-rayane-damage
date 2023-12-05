@@ -1,4 +1,17 @@
 .card {
     margin: var(--space1x);
-    
+
+}
+
+.card__text {
+    font-weight: 300;
+}
+
+.card__button {
+    font-family: var(--syncopate);
+    font-size: var(--button);
+    font-weight: 700;
+    letter-spacing: var(--btn);
+    color: var(--tonique);
+    text-decoration: underline;
 }
