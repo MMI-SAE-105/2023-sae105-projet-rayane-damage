@@ -12,6 +12,7 @@
     width: 163px;
     transform: rotate(90deg);
 }
+
 /*
 .footer__bg {
     position: relative;
@@ -21,6 +22,3 @@
     transform: rotate(-7deg);
 }
 */
-.footer__list {
-    list-style-type: none;
-}

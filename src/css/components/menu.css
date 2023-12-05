@@ -3,36 +3,6 @@
     position: fixed;
     display: flex;
 }
-/*
-.menu-btn {
-    width: 32px;
-    height: 32px;
-    position: relative;
-}
-*/
-/*
-.menu-btn__bar {
-    background-color: var(--white);
-    height: 2px;
-    left: 0;
-    margin-left: 2px;
-    width: 24px;
-    border-radius: 1px;
-    position: absolute;
-}
-
-.menu-btn__bar ::before {
-    content: "";
-    background-color: var(--white);
-    height: 2px;
-    top: 0;
-    left: 0;
-    margin-left: 2px;
-    width: 24px;
-    border-radius: 1px;
-    position: absolute;
-}
-*/
 
 .menu-btn__bar,
 .menu-btn__bar::before,
