@@ -1,0 +1,26 @@
+.footer {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--white);
+    background-color: var(--tonique-alt1);
+}
+
+.footer__bar{
+    background-color: var(--white);
+    height: 2px;
+    width: 163px;
+    transform: rotate(90deg);
+}
+/*
+.footer__bg {
+    position: relative;
+    height: 369px;
+    width: 445px;
+    background-color: var(--dominante);
+    transform: rotate(-7deg);
+}
+*/
+.footer__list {
+    list-style-type: none;
+}

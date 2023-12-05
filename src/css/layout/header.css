@@ -1,0 +1,24 @@
+.header {
+    background-color: var(--tonique);
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin: 8px;
+}
+
+.header__menu-btn{
+    vertical-align: top;
+    margin: 16px;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.header__lang {
+    margin: 13px;
+}

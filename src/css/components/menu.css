@@ -1,0 +1,21 @@
+.menu {
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+}
+/*
+.menu-btn {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+*/
+.menu-btn__bar {
+    background-color: var(--white);
+    height: 2px;
+    left: 0;
+    margin-left: 2px;
+    width: 24px;
+    border-radius: 1px;
+    position: absolute;
+}

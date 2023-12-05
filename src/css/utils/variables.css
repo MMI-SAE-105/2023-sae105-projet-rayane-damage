@@ -1,0 +1,25 @@
+:root{
+    /* Color styles */
+    --black: rgba(0, 0, 0, 1);
+    --gray2: rgba(112, 115, 146, 1);
+    --gray1: rgba(231, 222, 226, 1);
+    --white: rgba(255, 255, 255, 1);
+    --dominante: rgba(71, 21, 178, 1);
+    --tonique-2: rgba(255, 245, 0, 1);
+    --tonique-alt1: rgba(255, 123, 28, 1);
+    --tonique: rgba(237, 4, 49, 1);
+    --dominante-dark: rgba(30, 24, 98, 1);
+
+    /* Text-size styles */
+    /* base size: heading1 (24px) */
+    --heading1: 1rem;
+    --heading2: 1rem;
+    --heading3: 1rem;
+    --body2: 0.58rem;
+    --body: 0.58rem;
+    --button: 0.42rem;
+    --body3: 0.58rem;
+    --small-text: 0.46rem;
+    --button-big: 0.58rem;
+}
+
