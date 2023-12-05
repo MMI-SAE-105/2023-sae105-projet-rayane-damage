@@ -12,14 +12,30 @@
 
     /* Text-size styles */
     /* base size: heading1 (24px) */
-    --heading1: 1rem;
-    --heading2: 1rem;
-    --heading3: 1rem;
-    --body2: 0.58rem;
+    --heading: 1rem;
     --body: 0.58rem;
     --button: 0.42rem;
-    --body3: 0.58rem;
     --small-text: 0.46rem;
     --button-big: 0.58rem;
+
+  /* Polices de caractère */
+  --monoton: 'Monoton';
+  --biorhyme: 'BioRhyme';
+  --italic: 'Trirong';
+  --syncopate: 'Syncopate';
+
+  /* Letter spacing */
+  --l20: 20%;
+  --l15: 15%;
+  --l10: 10%;
+  --btn: -5%;
+
+  /* Espaces */
+  --space1x: 8px;
+  --space2x: 16px;
+  --space3x: 24px;
+  --space4x: 48px;
+  --space5x: 80px;
 }
+
 
