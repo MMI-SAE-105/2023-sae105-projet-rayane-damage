@@ -3,6 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     color: var(--white);
+
+    background-color: var(--dominante);
 }
 
 .footer__bar{
@@ -12,15 +14,23 @@
     transform: rotate(90deg);
 }
 
-
+/*
 .footer__bg{
+    content: "";
     display: flex;
     position: relative;
     bottom: 0;
     height: 400px;
     z-index: -1;
 
-    background : linear-gradient( 10turn, var(--dominante-dark), var(--dominante));
+    background : linear-gradient(var(--dominante)35%, var(--dominante-dark));
 
     clip-path: polygon(0 21%, 100% 8%, 100% 100%, 0% 100%);
 }
+
+.footer__bg::before{
+    content: "";
+    transform: rotateZ(8deg);
+    
+}
+*/
