@@ -50,12 +50,6 @@ li {
   margin: 0;
 }
 
-/* Classe générique permettant de définir les marges sur les cotés */
-.container {
-  padding-left: var(--space2x);
-  padding-right: var(--space2x);
-}
-
 /* Bug IOS
 => L'overflow doit être appliqué sur l'élément body ET html
 pour faire disparaître le scroll sur safari IOS */

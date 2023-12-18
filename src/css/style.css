@@ -22,11 +22,13 @@ Soyez attentifs à l'ordre d'import :
 
 /* Base */
 @import url(base/main.css);
+@import url(base/media.css);
 
 /* Layout */
 @import url(layout/header.css);
 @import url(layout/footer.css);
 @import url(layout/titles.css);
+@import url(layout/hero.css);
 
 /* Components */
 @import url(components/menu.css);

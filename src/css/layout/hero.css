@@ -1,0 +1,25 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__img {
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero__text {
+    position: relative;
+
+    color: var(--white);
+    width: 60vw;
+    
+    top: 50vw;
+    z-index: 1;
+
+    text-align: center;
+    align-self: center;
+    
+}

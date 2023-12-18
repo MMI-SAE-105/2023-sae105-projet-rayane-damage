@@ -3,3 +3,8 @@ img {
     height: auto;
     max-width: 100%;
 }
+
+.img {
+    width: 100vw;
+    height: 80vw;
+}
