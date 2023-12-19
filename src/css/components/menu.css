@@ -1,20 +1,24 @@
 .menu {
     visibility: hidden;
+    top: -406px;
 }
 .menu--visible {
     visibility: visible;
+    top: 64px;
 }
 .menu,
 .menu--visible {
     display: flex;
     position: fixed;
+    z-index: -1;
+
     left: 0;
-    top: 64px;
     display: flex;
 
     background-color: var(--tonique);
     width: 150vw;
     height: 50vh;
+    transition: all .3s ease-out;
 }
 .menu--visible::after{
     content: "";
@@ -60,15 +64,25 @@
     border-radius: 1px;
     transition: all .4s ease-in-out;
 }
-
 .menu-btn__bar::before {
     left: 1px;
     top: -8px;
     width: 24px;
 }
-
 .menu-btn__bar::after {
     left: 1px;
     top: 8px;
     width: 24px;
+}
+
+
+.menu-btn__bar--open,
+.menu-btn__bar--open::after,
+.menu-btn__bar--open::before {
+    transform: rotate(135deg);
+}
+.menu-btn__bar--open::after,
+.menu-btn__bar--open::before {
+    transform: rotate(90deg);
+    top: 0;
 }

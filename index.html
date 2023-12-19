@@ -28,7 +28,7 @@
                 alt="logo passage anglais-français">
             </button>
             <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
-                <span class="menu-btn__bar"></span>
+                <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
             </button>
 
             <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
