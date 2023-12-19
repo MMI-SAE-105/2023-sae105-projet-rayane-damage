@@ -1,13 +1,40 @@
 .menu {
     visibility: hidden;
-    position: fixed;
-    display: flex;
 }
 .menu--visible {
     visibility: visible;
-    position: fixed;
-    display: flex;
 }
+.menu,
+.menu--visible {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 64px;
+    display: flex;
+
+    background-color: var(--tonique);
+    width: 100vw;
+    height: 50vh;
+}
+.menu__link {
+    display: block;
+    color: var(--white);
+    height: 48px;
+
+    margin-top: var(--space1x);
+}
+.menu__link::after {
+    content: "";
+    display: block;
+    position: relative;
+
+    bottom: -16px;
+    height: 2px;
+    width: 80vw;
+
+    background-color: var(--white);
+}
+
 
 .menu-btn__bar,
 .menu-btn__bar::before,
