@@ -12,10 +12,10 @@
 
     /* Text-size styles */
     /* base size: heading1 (24px) */
-    --heading: 1rem;
-    --body: 0.68rem;
-    --button: 0.58rem;
-    --small-text: 0.46rem;
+    --heading: 1.5rem;
+    --body: 0.8rem;
+    --button: 0.68rem;
+    --small-text: 0.56rem;
     --button-big: 0.68rem;
 
   /* Polices de caractère */

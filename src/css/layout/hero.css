@@ -23,3 +23,13 @@
     align-self: center;
     
 }
+
+
+.intro,
+.intro__text{
+    margin: var(--space2x);
+}
+
+.intro{
+    font-size: var(--heading);
+}
