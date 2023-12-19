@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Across the Spider-Web</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 
-<body>
+<body x-data="{menuOpen: false}">
     <header class="header">
         <div class="header__start">
             <a href="#">
@@ -30,7 +31,7 @@
                 <span class="menu-btn__bar"></span>
             </button>
 
-            <nav class="header__menu menu">
+            <nav class="header__menu " :class="menuOpen ? 'menu--visible' : 'menu' ">
                 <ul class="menu__list">
                   <li class="menu__item">
                     <a class="menu__link" href="#">Une réplique qui implique des sacrifices</a>

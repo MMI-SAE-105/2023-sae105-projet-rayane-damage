@@ -3,6 +3,11 @@
     position: fixed;
     display: flex;
 }
+.menu--visible {
+    visibility: visible;
+    position: fixed;
+    display: flex;
+}
 
 .menu-btn__bar,
 .menu-btn__bar::before,
