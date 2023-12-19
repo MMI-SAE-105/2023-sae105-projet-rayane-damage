@@ -33,3 +33,6 @@
 .intro{
     font-size: var(--heading);
 }
+.intro__text{
+    margin-bottom: var(--space4x);
+}
