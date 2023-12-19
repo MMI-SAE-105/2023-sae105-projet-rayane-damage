@@ -75,3 +75,13 @@ uniquement accessible aux lecteurs vocaux (sr = screen reader) */
   white-space: nowrap;
   border: 0;
 }
+
+
+.media-text {
+  font-family: var(--syncopate);
+  font-size: var(--small-text);
+  font-weight: 700;
+  letter-spacing: var(--btn);
+
+  margin-left: var(--space1x);
+}
