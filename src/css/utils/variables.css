@@ -13,10 +13,10 @@
     /* Text-size styles */
     /* base size: heading1 (24px) */
     --heading: 1rem;
-    --body: 0.58rem;
-    --button: 0.42rem;
+    --body: 0.68rem;
+    --button: 0.58rem;
     --small-text: 0.46rem;
-    --button-big: 0.58rem;
+    --button-big: 0.68rem;
 
   /* Polices de caractère */
   --monoton: 'Monoton';
@@ -37,5 +37,3 @@
   --space4x: 48px;
   --space5x: 80px;
 }
-
-
