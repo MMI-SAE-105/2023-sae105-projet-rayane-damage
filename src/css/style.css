@@ -29,6 +29,7 @@ Soyez attentifs à l'ordre d'import :
 @import url(layout/footer.css);
 @import url(layout/titles.css);
 @import url(layout/hero.css);
+@import url(layout/bg.css);
 
 /* Components */
 @import url(components/menu.css);

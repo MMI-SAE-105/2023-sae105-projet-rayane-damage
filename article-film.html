@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Across the Spider-Web</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+    <header class="header">
+        <div class="header__start">
+            <a href="#">
+                <img 
+                src="public/img/icones/Site logo.png" 
+                alt="Logo du site"
+                class="header__logo"
+                />
+            </a>
+        </div>
+
+        <div class="header__end">
+            <button class="header__lang">
+                <img 
+                src="public/img/icones/fr-en.png" 
+                alt="logo passage anglais-français">
+            </button>
+            <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
+                <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+            </button>
+
+            <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Une réplique qui implique des sacrifices</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Un film à l'identité inoubliable</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Un trio de réalisateurs de talent</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">“Calling”, un message profond</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Les origines de Miles Morales</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="hero">
+            <h1 class="hero__text">“Être Spiderman c'est faire des sacrifices”</h1>
+            <img class="hero__img img" src="public/img/img/index.webp" alt="Miguel O'hara prononçant la réplique">
+        </div>
+        <h2 class="intro">Introduction</h2>
+        <p class="intro__text">
+            <em>Spiderman : Across the spider-verse</em> est un film qui a su susciter l'enthousiasme de ses fans pour la richesse et la finesse des détails qu'il contient : que ce soit visuellement, sonorement ou même scénaristiquement. Ce site se focalise principalement sur une réplique mémorable du film : « Être Spiderman, c'est faire des sacrifices. » Mais couvre aussi de nombreux autres aspects du film que vous ne pouvez pas attendre de découvrir !
+        </p>
+        
+        <section class="card">
+          <img src="public/img/img/card-rep.jpg" alt="Miguel combat Miles" class="card__img card__img--frame">
+          <p class="card__text">      « Être Spiderman, c'est faire des sacrifices ». Cette réplique passée inaperçue pour la plupart des personnes est en fait ...</p>
+          <a href=# class="card__button">plus d'infos</a>
+        </section>
+
+        <h3 class="media-text container">bande annonce officielle :</h3>
+
+
+        <span class="body__bg body__bg--blue"></span>
+
+        
+        <span class="body__bg body__bg--red"></span>
+
+        
+        <h3 class="media-text container">les autres films spiderman :</h3>
+    </main>
+
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item"> <a href="#">glossaire</a> </li>
+        <li class="footer__item"> <a href="#">autres projets</a> </li>
+        <li class="footer__item"> <a href="#">à propos</a> </li>
+        <li class="footer__item"> <a href="#">contact</a> </li>
+      </ul>
+      <span class="footer__bar"></span>
+      <a href="#" class="footer__logo">
+        <img src="public/img/icones/Site logo big.png" alt="logo du site">
+      </a>
+      <div class="footer__text">
+        <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
+        <p class="footer__credits">Réalisé par Rayane Damage du groupe B2</p>
+        <a href="#" class="footer__mailto">rayane.damage@edu.univ-fcomte.fr</a>
+        <span class="footer__bg"></span>
+      </div>  
+    </footer>
+</body>
+
+
+</html>
