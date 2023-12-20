@@ -1,6 +1,7 @@
 .footer {
     position: absolute;
     display: flex;
+    justify-self: flex-end;
     flex-wrap: wrap;
     color: var(--white);
 
