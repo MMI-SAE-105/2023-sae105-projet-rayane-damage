@@ -28,6 +28,30 @@
 }
 
 
+.art__infos{
+    position: relative;
+    background-color: var(--tonique-2);
+    padding: 4px;
+    padding-bottom: var(--space2x);
+
+    width: 40vw;
+    left: 5vw;
+    top: -2vh;
+
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.art__info--text{
+    color: var(--black);
+    font-size: var(--small-text);
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 150%;
+    width: 100%;
+    
+    margin: 0px var(--space2x);
+}
+
+
 .art__chapo{
     margin: var(--space2x);
     margin-bottom: var(--space4x);
