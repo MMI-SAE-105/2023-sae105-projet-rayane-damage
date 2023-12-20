@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Across the Spider-Web</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+  <header class="header">
+      <div class="header__start">
+          <a href="index.html">
+              <img 
+              src="public/img/icones/Site logo.png" 
+              alt="Logo du site"
+              class="header__logo"
+              />
+          </a>
+      </div>
+
+      <div class="header__end">
+          <button class="header__lang">
+              <img 
+              src="public/img/icones/fr-en.png" 
+              alt="logo passage anglais-français">
+          </button>
+          <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
+              <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+          </button>
+
+          <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+
+    <main>
+      <header class="art__header">
+        <h1 class="art__title">Un trio de réalisateurs de <em class="title--em">talent</em></h1>
+        <img class="art__img art__img--frame" src="public/img/img/real-0.jpg" alt="">
+        <div class="art__infos">
+          <h3 class="art__info--text">Publié le : 18/10/2023</h3>
+          <h3 class="art__info--text">Temps de lecture : 4 min</h3>
+        </div>
+        <p class="art__chapo">      Réalisé par le nombre inhabituel de 3 réalisateurs, la trilogie de Miles Morales se trouve entre de bonnes mains, Justin K. Thompson, Kemp Powers ou encore Joaquim Dos Santos sont trois réalisateurs talentueux qui se complètent bien entre eux.</p>
+      </header>
+
+      <div class="art__paragraph">
+        <p class="art__text">      Le film a été réalisé non pas par un ou deux réalisateurs, mais bien par un trio talentueux :
+        </p>
+      </div>
+
+
+      <div class="art__paragraph art__real">
+        <figure class="art__figure">
+            <img class="art__portrait art__portrait--frame" src="public/img/img/real-1.jpg" alt="Justin K. Thompson">
+            <figcaption class="art__portrait--caption">Justin K. Thompson</figcaption>
+        </figure>
+        <p class="art__text">
+            Tout d'abord, Justin K. Thompson qui est le seul des trois à avoir travaillé sur le premier opus de la trilogie : Spiderman : New generation. Il n'occupait cependant pas le poste de réalisateur à ce moment-là et était chargé de la tâche de réaliser la majorité des décors du film. Il est aussi connu pour son travail sur les 2 films : Tempête de boulettes géantes dans lesquels il était chef décorateur. Ainsi, de par son expérience et ses relations avec les réalisateurs, il a pu en occuper le poste pour les 2 prochains films de la trilogie Miles Morales.
+        </p>
+      </div>
+
+
+      <div class="art__paragraph art__real">
+        <figure class="art__figure">
+            <img class="art__portrait art__portrait--frame" src="public/img/img/real-2.jpg" alt="Kemp Powers">
+            <figcaption class="art__portrait--caption">Kemp Powers</figcaption>
+        </figure>
+        <p class="art__text">
+            Kemp Powers est le deuxième réalisateur du film, il fut d'abord assez peu connu du grand public bien qu'il eût déjà écrit le script du film One night in Miami pour lequel il était aussi producteur exécutif, ainsi que la première saison de Star-Trek Discoveries. C'est en 2020
+            qu'il devient plus connu en co-réalisant le film d'animation Pixar Soul et devint le premier
+            afro-américain à occuper une position de réalisateur sur un film Disney. Il est désormais engagé à réaliser la suite de Across the spider-verse auprès des deux autres réalisateurs.
+        </p>
+      </div>
+
+
+      <div class="art__paragraph art__real">
+        <figure class="art__figure">
+            <img class="art__portrait art__portrait--frame" src="public/img/img/real-3.jpg" alt="Joaquim Dos Santos">
+            <figcaption class="art__portrait--caption">Joaquim Dos Santos</figcaption>
+        </figure>
+        <p class="art__text">
+            Le troisième et sûrement le plus connu des trois est Joaquim Dos Santos. Il fut d'abord storyboard artist pour la série animée Justice League puis fut promu au poste de réalisateur pour la troisième saison de la série. Plus tard, il rejoint Avatar : Le dernier maître de l'air mais cette fois ci en tant que storyboard artist de nouveau mais, à partir de la troisième saison, il commença à réaliser des épisodes et ce jusqu'à la fin de la série. De plus, il fut co-réalisateur et co-producteur exécutif sur la séquelle La légende de Korra. Enfin, il retourna chez Warner Bros pour réaliser 2 courts métrages d'animation : The Spectre et Jonah Hex. Il finira par occuper le poste de réalisateur pour le film Spiderman : Across the spider-verse et sa suite directe Beyond the spider-verse.
+        </p>
+      </div>
+
+
+      <span class="body__bg body__bg--red"></span>
+      <div class="art__paragraph white-text">
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="public/img/img/image 4 real.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle white-text" >Un trio complémentaire</h2>
+        <p class="art__text">            Ainsi, ces trois réalisateurs possèdent des compétences que l'on pourrait qualifier de complémentaires : Thompson possède l'avantage d'avoir contribué au tout premier film de la trilogie et de faire valoir la portée esthétique au film ; Powers possède lui une indéniable expérience en termes d'écriture ; et Dos Santos apporte ses connaissances en story-boarding, indissociables du poste de réalisateur, et encore plus dans le cinéma d'animation. </p>
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item"> <a href="#">glossaire</a> </li>
+        <li class="footer__item"> <a href="#">autres projets</a> </li>
+        <li class="footer__item"> <a href="#">à propos</a> </li>
+        <li class="footer__item"> <a href="#">contact</a> </li>
+      </ul>
+      <span class="footer__bar"></span>
+      <a href="#" class="footer__logo">
+        <img src="public/img/icones/Site logo big.png" alt="logo du site">
+      </a>
+      <div class="footer__text">
+        <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
+        <p class="footer__credits">Réalisé par Rayane Damage du groupe B2</p>
+        <a href="#" class="footer__mailto">rayane.damage@edu.univ-fcomte.fr</a>
+        <span class="footer__bg"></span>
+      </div>  
+    </footer>
+</body>
+
+
+</html>
