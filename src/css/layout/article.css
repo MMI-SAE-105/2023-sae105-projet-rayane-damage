@@ -8,3 +8,29 @@
 .art__img{
     object-fit: cover;
 }
+
+
+.art__chapo{
+    margin: var(--space2x);
+    margin-bottom: var(--space4x);
+
+    color: var(--gray2);
+    font-weight: 700;
+}
+.art__chapo::after{
+    content: "";
+    position: relative;
+    display: block;
+    
+    bottom: -16px;
+    left: 5vw;
+    height: 2px;
+    width: 80vw;
+    background-color: var(--tonique);
+}
+
+
+.art__text{
+    margin: var(--space2x);
+    margin-bottom: var(--space4x);
+}
