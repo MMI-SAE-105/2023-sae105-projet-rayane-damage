@@ -34,3 +34,10 @@
     margin: var(--space2x);
     margin-bottom: var(--space4x);
 }
+.subtitle{
+    font-weight: 700;
+    color: var(--black);
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: var(--l10);
+}
