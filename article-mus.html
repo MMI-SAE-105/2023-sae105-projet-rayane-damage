@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Across the Spider-Web</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+  <header class="header">
+      <div class="header__start">
+          <a href="index.html">
+              <img 
+              src="public/img/icones/Site logo.png" 
+              alt="Logo du site"
+              class="header__logo"
+              />
+          </a>
+      </div>
+
+      <div class="header__end">
+          <button class="header__lang">
+              <img 
+              src="public/img/icones/fr-en.png" 
+              alt="logo passage anglais-français">
+          </button>
+          <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
+              <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+          </button>
+
+          <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-rep.html">Un rep à l'identité inoubliable</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+
+    <main>
+      <header class="art__header">
+        <h1 class="art__title"><em class="title--em">"“Calling”"</em>, un message profond</h1>
+        <img class="art__img art__img--frame" src="public/img/img/rep-0.webp" alt="">
+        <div class="art__infos">
+          <h3 class="art__info--text">Publié le : 18/10/2023</h3>
+          <h3 class="art__info--text">Temps de lecture : 3 min</h3>
+        </div>
+        <p class="art__chapo">      La chanson “Calling” de la bande originale du film est une chanson qui aborde des thèmes importants du film : le sacrifice et le dévouement. </p>
+      </header>
+
+      <div class="art__paragraph">
+        <p class="art__text">      La chanson est chantée par 4 rappeurs américains : A boogie wit da hoodie, Metro
+            Boomin, Swae Lee et Nav. Ces artistes ont fait de nombreux feat pour composer la bande
+            originale du film. Metro Boomin était en effet l'artiste principal en charge de la bande son du film et a effectué de nombreux feats avec d'autres rappeurs. Calling est une musique très marquante dans le film car elle est sincère et exprime bien les sentiments du personnage de Miles par rapport à celle qu'il aime : Gwen Stacey.
+        </p>
+      </div>
+
+
+      <div class="art__paragraph">
+        <h2 class="subtitle" >Des paroles montrant une détermination sans faille</h2>
+        <p class="art__text">
+            Les paroles révèlent un fort désir de protéger et de prendre soin d'un être aimé, même au prix de ses propres besoins et de sa propre intégrité. Ici, Miles se présente comme
+            un héros prêt à la sauver alors qu'il a déjà la lourde tâche d'être Spiderman et de devoir
+            protéger sa ville. Cependant, il est prêt à faire face à ces obstacles et à surmonter des défis our elle, et exprime sa disponibilité et sa motivation pour la soutenir. La chanson prend un ton plus sombre lorsque Miles parle de son passé et de sa propre situation : il évoque les
+            moments difficiles et les choix contestables qu'il a fait, mais il insiste sur le fait qu'il a changé grâce à elle et qu'il est maintenant prêt à être présent pour elle peu importe les obstacles.
+        </p>
+      </div>
+
+      <span class="body__bg body__bg--red"></span>
+      <div class="art__paragraph white-text">
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="public/img/img/rep-1.webp" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle white-text" >Une héroïne intéressante</h2>
+        <p class="art__text">      Spider-Gwen est mentionnée plus haut et il est intéressant de la mentionner. En effet, il s'agit aussi d'un personnage très développé dans le film et qui évolue en parallèle de Miles. D'une certaine manière, la chanson est vraie dans les 2 sens : aussi bien de Miles à Gwen
+            qu'inversement. Évidemment, elle aussi aime Miles mais craint qu'il lui arrive malheur, de ne pas être toujours capable de le protéger étant donné qu'elle y échoue à plusieurs reprises au long du film.</p>
+      </div>
+
+
+      <span class="body__bg body__bg--blue"></span>
+
+
+      <div class="art__paragraph white-text">
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="public/img/img/rep-2.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle white-text">Un message cohérent</h2>
+        <p class="art__text">      En fin de compte, Calling est une chanson d'amour et de dévouement, mettant en avant l'idée de sacrifier son propre bien-être pour protéger et soutenir la personne qu'on aime. En plus d’être une description cohérente de l’état d’esprit de Miles tout au long du film, elle reprend le thème bien connu du super-héros déchiré entre protéger le plus de monde possible ou protéger les gens qui comptent le plus pour lui. Au final, Calling est surtout une chanson qui célèbre l'amour et l'engagement envers l'autre, même dans les moments difficiles.
+        </p>
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="public/img/img/rep-3.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+      </div>
+
+      <h3 class="media-text white-text">Audio officiel :</h3>
+      <video class="video trailer" src="public/video/audio.mp4" controls></video>
+
+      <span class="body__bg body__bg--red"></span>
+
+    <h2 class="subtitle white-text">Paroles :</h2>
+    <p class="art__text white-text">Just to save you
+        Ooh-ooh-ooh (yo)
+        I'd give my all
+        Hey
+        I can hear you screamin' out, callin' me (callin' me)
+        It's my fault, made you fall for me (fall)
+        So, to save you, I'd give my all (my all)
+        Just to save you, I'd give all of me (all of me)
+        I can hear you screamin' out, callin' me (callin' me)
+        It's my fault, made you fall for me (fall for me)
+        So, to save you, I'd give my all (my all)
+        You fell for me, I count on you when times are tough
+        Instead of holdin' you down, I should lift you up
+        It hurts me when you start to see my flaws (my flaws)
+        But just to save you, I'd risk it all (all)
+        Short on time for you, I'd never have enough (have enough)
+        When I ran into you, I didn't plan on fallin' in love
+        Always there to wipe your tears, I hate to see you cry
+        If you tell me to jump, I'll ask you, "How high?"
+        I know sometimes it be hard for me to tell the truth (tell the truth)
+        But I go through any obstacle to get to you (to you)
+        I'm not materialistic, but I got a thing for you
+        Treat the world like my guitar, I'm pullin' strings for you
+        I can hear you screamin' out, callin' me (callin' me)
+        It's my fault, made you fall for me (fall)
+        So, to save you, I'd give my all (my all)
+        Just to save you, I'd give all of me (all of me)
+        I can hear you screamin' out, callin' me (callin' me)
+        It's my fault, made you fall for me (fall for me)
+        So, to save you, I'd give my all (my all)
+        Let me be your hero
+        You held me down, I was stuck at the bottom
+        Get out of here, I get you lit, oh
+        I know you can't stand me
+        I remember when I bust down your rose gold, had your diamonds dancin'
+        I picked you up in that Bentley Mulsanne when them sirens was glarin'
+        I gave you the slammer, it's nobody else that got it, you can call me
+        The way I let you come into my life and take my heart away, it's like a robbery
+        Every time you look up on the charts, now you seein' me, I hope you proud of me
+        I got you bussed down, Patek Philippes, ain't no way you goin' back to Cartis
+        And I splurge on that shit, like seeing a Zombie
+        Seen me out in a public, hardly
+        Low-key with my mask, I'm solo
+        If I don't speak to nobody, I'm sorry
+        And I'll save you if you can't save yourself
+        Hold on, let me catch my breath
+        Need a hero? I'm the last one left
+        I can hear you screamin' out, callin' me (callin' me)
+        It's my fault, made you fall for me (fall)
+        So, to save you, I'd give my all (my all)
+        Just to save you, I'd give all of me (all of me)
+        I can hear you screamin' out, callin' me (callin' me)
+        It's my fault, made you fall for me (fall for me)
+        So, to save you, I'd give my all (my all)
+        Oh-oh (all of me)
+        All the people
+        And all of me
+        (If Young Metro don't trust you-, trust you)
+        (Metro)
+    </p>
+      
+    </main>
+
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item"> <a href="#">glossaire</a> </li>
+        <li class="footer__item"> <a href="#">autres projets</a> </li>
+        <li class="footer__item"> <a href="#">à propos</a> </li>
+        <li class="footer__item"> <a href="#">contact</a> </li>
+      </ul>
+      <span class="footer__bar"></span>
+      <a href="#" class="footer__logo">
+        <img src="public/img/icones/Site logo big.png" alt="logo du site">
+      </a>
+      <div class="footer__text">
+        <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
+        <p class="footer__credits">Réalisé par Rayane Damage du groupe B2</p>
+        <a href="#" class="footer__mailto">rayane.damage@edu.univ-fcomte.fr</a>
+        <span class="footer__bg"></span>
+      </div>  
+    </footer>
+</body>
+
+
+</html>
