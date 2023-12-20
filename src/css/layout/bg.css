@@ -20,7 +20,13 @@
 .body__bg--blue{
     background-color: var(--dominante);
 }
+.body__bg--blue::before{
+    content: url(../../../public/img/img/pattern-big-2.svg);
+}
 
 .body__bg--red{
     background-color: var(--tonique);
+}
+.body__bg--red::before{
+    content: url(../../../public/img/img/pattern-big-3.svg);
 }
