@@ -20,7 +20,7 @@
     margin: 0;
 }
 .art__img--frame{
-    height: 30vh;
+    height: 25vh;
     width: 100vw;
 }
 .art__img{
@@ -54,7 +54,6 @@
 }
 .subtitle{
     font-weight: 700;
-    color: var(--black);
     text-align: center;
     line-height: 140%;
     letter-spacing: var(--l10);
