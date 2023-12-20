@@ -1,6 +1,9 @@
+.art__figure{
+    margin: 0;
+}
 .art__img--frame{
-    height: 200px;
-    width: 100%;
+    height: 30vh;
+    width: 100vw;
 }
 .art__img{
     object-fit: cover;

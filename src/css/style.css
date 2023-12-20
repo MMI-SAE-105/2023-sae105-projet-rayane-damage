@@ -30,6 +30,7 @@ Soyez attentifs à l'ordre d'import :
 @import url(layout/titles.css);
 @import url(layout/hero.css);
 @import url(layout/bg.css);
+@import url(layout/article.css);
 
 /* Components */
 @import url(components/menu.css);
