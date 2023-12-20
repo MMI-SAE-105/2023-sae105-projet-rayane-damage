@@ -10,76 +10,108 @@
 
 
 <body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
-    <header class="header">
-        <div class="header__start">
-            <a href="#">
-                <img 
-                src="public/img/icones/Site logo.png" 
-                alt="Logo du site"
-                class="header__logo"
-                />
-            </a>
-        </div>
+  <header class="header">
+      <div class="header__start">
+          <a href="#">
+              <img 
+              src="public/img/icones/Site logo.png" 
+              alt="Logo du site"
+              class="header__logo"
+              />
+          </a>
+      </div>
 
-        <div class="header__end">
-            <button class="header__lang">
-                <img 
-                src="public/img/icones/fr-en.png" 
-                alt="logo passage anglais-français">
-            </button>
-            <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
-                <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
-            </button>
+      <div class="header__end">
+          <button class="header__lang">
+              <img 
+              src="public/img/icones/fr-en.png" 
+              alt="logo passage anglais-français">
+          </button>
+          <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
+              <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+          </button>
 
-            <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Une réplique qui implique des sacrifices</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Un film à l'identité inoubliable</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Un trio de réalisateurs de talent</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">“Calling”, un message profond</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#">Les origines de Miles Morales</a>
-                  </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+          <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
 
 
     <main>
-        <div class="hero">
-            <h1 class="hero__text">“Être Spiderman c'est faire des sacrifices”</h1>
-            <img class="hero__img img" src="public/img/img/index.webp" alt="Miguel O'hara prononçant la réplique">
-        </div>
-        <h2 class="intro">Introduction</h2>
-        <p class="intro__text">
-            <em>Spiderman : Across the spider-verse</em> est un film qui a su susciter l'enthousiasme de ses fans pour la richesse et la finesse des détails qu'il contient : que ce soit visuellement, sonorement ou même scénaristiquement. Ce site se focalise principalement sur une réplique mémorable du film : « Être Spiderman, c'est faire des sacrifices. » Mais couvre aussi de nombreux autres aspects du film que vous ne pouvez pas attendre de découvrir !
+      <header class="art__header">
+        <h1 class="art__title">Un <em>film</em> à l'identité inoubliable</h1>
+        <img class="art__img art__img--frame" src="public/img/img/film-0.jpg" alt="affiche du film">
+        <p class="chapo">      Le film d'animation Américain Spiderman : Across the spider-verse d'abord prévu pour le 22 octobre 2022 puis repoussé au 31 Mai 2023 en France se trouve avoir été un grand succès pour un film d'animation. Il est d'ailleurs distingué pour son style graphique unique.</p>
+      </header>
+
+      <div class="art__paragraph">
+        <p class="art__text">      En plus d'être une suite attendue par de nombreux fans, Across the spider-verse brille
+          par l'originalité de sa direction artistique et son style d'animation. Déjà présent dans le premier opus : Spiderman : new generation, il essaie de répliquer au mieux les sensations et l'esthétique des comic-books de super héros produits par Marvel vers les années 90. Pour
+          atteindre ce but, le film utilise des techniques spécifiques à ce médium comme des trames et
+          des hachures pour matérialiser les dégradés de couleurs et les ombres, des lignes de mouvement aussi appelées « smears » ou encore des onomatopées pour accentuer certains bruits et actions.
         </p>
-        
-        <section class="card">
-          <img src="public/img/img/card-rep.jpg" alt="Miguel combat Miles" class="card__img card__img--frame">
-          <p class="card__text">      « Être Spiderman, c'est faire des sacrifices ». Cette réplique passée inaperçue pour la plupart des personnes est en fait ...</p>
-          <a href=# class="card__button">plus d'infos</a>
-        </section>
-
-        <h3 class="media-text container">bande annonce officielle :</h3>
+      </div>
 
 
-        <span class="body__bg body__bg--blue"></span>
+      <div class="art__paragraph">
+        <h2 class="subtitle" >Une fréquence particulière</h2>
+        <p>
+          De plus, le film adopte une fréquence d'affichage variable : là où la plupart des films
+          (d'animation ou non) sont présentés en 24 images par seconde, certains plans dans Across  the spider-verse le sont en 12 images par secondes, donnant l'impression d'images
+          saccadées qui rappellent le survol successif de cases de bande dessinée. Mais l'utilisation de
+          cette fréquence particulière ne s'arrête pas là, elle est aussi utilisée à certains moments pour
+          accentuer certaines émotions des personnages comme l'inconfort, le manque de confiance
+          ou d'expérience.
+        </p>
+      </div>
 
-        
-        <span class="body__bg body__bg--red"></span>
+      <div class="art__paragraph">
+        <figure class="art__figure">
+          <img class="art__img" src="public/img/img/film-1.png" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle" >Une multitude de styles</h2>
+        <p class="art__text">      En effet, les personnages principaux du film viennent pour la plupart d'univers différents avec des directions artistiques différentes. L'exemple le plus notable est Spider-punk dont l'esthétique est inspirée des collages et du déconstructivisme. Ainsi, il possède un contour irrégulier comme du papier grossièrement découpé et les différentes parties de son corps sont animées a différentes fréquences (son corps est animé toutes les 2 ou 3 images, sa guitare toutes les 4 images etc) ce qui translate bien son caractère anarchique. D'une autre manière, le vilain du film : la tache est d'abord représenté avec des lignes de constructions apparentes pour montrer qu'il n'est pas complet, pas finalisé en tant que personnage alors que vers la fin du film elles disparaissent pour montrer qu'il est accompli en tant que vilain.</p>
+      </div>
 
-        
-        <h3 class="media-text container">les autres films spiderman :</h3>
+
+      <div class="art__paragraph white text">
+        <figure class="art__figure">
+          <img src="public/img/img/film-2.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle ">Une identité inoubliable</h2>
+        <p class="art__text">      La manière particulière dont les visuels du film sont traités et l’attention apportée à la
+          distinction entre les différents univers exploitent toutes les possibilités et tous les avantages offerts par l’animation et donnent au film une identité unique. C’est d’ailleurs surement cette dernière qui sera la raison pour laquelle on se souviendra de Miles Morales.
+        </p>
+        <figure class="art__figure">
+          <img src="public/img/img/film-3.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+      </div>
+
+
+      <h3 class="media-text container">bande annonce officielle :</h3>
+
+      
+      <h3 class="media-text container">les autres films spiderman :</h3>
     </main>
 
 
