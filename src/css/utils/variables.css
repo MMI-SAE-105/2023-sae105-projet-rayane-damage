@@ -25,10 +25,10 @@
   --syncopate: 'Syncopate';
 
   /* Letter spacing */
-  --l20: 20%;
-  --l15: 15%;
-  --l10: 10%;
-  --btn: -5%;
+  --l20: .2rem;
+  --l15: .15rem;
+  --l10: .1rem;
+  --btn: -0.5rem;
 
   /* Espaces */
   --space1x: 8px;

@@ -1,3 +1,21 @@
+.art__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.art__title{
+    color: var(--tonique);
+    text-align: center;
+}
+.title--em{
+    font-family: var(--monoton);
+    letter-spacing: var(--l20);
+    line-height: 140%;
+    text-transform: lowercase;
+    font-style: normal;
+}
+
+
 .art__figure{
     margin: 0;
 }
