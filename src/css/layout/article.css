@@ -1,0 +1,7 @@
+.art__img--frame{
+    height: 200px;
+    width: 100%;
+}
+.art__img{
+    object-fit: cover;
+}
