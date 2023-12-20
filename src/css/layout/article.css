@@ -83,7 +83,38 @@
     letter-spacing: var(--l10);
 }
 
+
 .paroles{
     position: relative;
     margin-left: 5vw;
+}
+
+
+.art__real{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80vw;
+    margin: var(--space2x);
+}
+.art__portrait--frame{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.art__portrait{
+    object-fit: cover;
+}
+.art__portrait--caption{
+    font-family: var(--monoton);
+    letter-spacing: var(--l20);
+    line-height: 140%;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: var(--heading);
+    color: var(--tonique);
+
+    margin-left: var(--space2x);
 }
