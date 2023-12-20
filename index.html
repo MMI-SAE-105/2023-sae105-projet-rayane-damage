@@ -9,7 +9,7 @@
 </head>
 
 
-<body x-data="{menuOpen: false}">
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
     <header class="header">
         <div class="header__start">
             <a href="#">
