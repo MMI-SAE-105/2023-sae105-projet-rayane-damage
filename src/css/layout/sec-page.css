@@ -1,5 +1,14 @@
 .sec-page{
+    height: 100vh;
     background-color: var(--dominante);
+}
+.sec-page::before{
+    content: url(../../../public/img/img/pattern-big-4.svg);
+    position: absolute;
+    right: -145px;
+    top: -230px;
+
+    transform: rotateZ(25deg);
 }
 
 
