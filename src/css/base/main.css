@@ -20,6 +20,12 @@ main{
 em {
   font-weight: 300;
 }
+.gl__link{
+  color: var(--dominante);
+}
+.gl__link--dark{
+  color: var(--dominante-dark);
+}
 
 /* Les règles typographiques générales des titres */
 h1,
