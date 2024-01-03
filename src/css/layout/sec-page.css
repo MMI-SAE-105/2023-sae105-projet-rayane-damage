@@ -15,12 +15,14 @@
 .sec-page__title{
     display: block;
     text-align: center;
+    margin-bottom: 5vh;
 
     font-family: var(--monoton);
     letter-spacing: var(--l20);
     line-height: 140%;
     text-transform: uppercase;
     font-style: normal;
+    font-weight: 300;
 
     color: var(--tonique-2);
 }
