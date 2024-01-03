@@ -1,0 +1,25 @@
+.sec-page__title{
+    display: block;
+    text-align: center;
+
+    font-family: var(--monoton);
+    letter-spacing: var(--l20);
+    line-height: 140%;
+    text-transform: uppercase;
+    font-style: normal;
+
+    color: var(--tonique-2);
+}
+
+.sec-page__title::after{
+    content: "";
+    display: block;
+    position: relative;
+
+    bottom: -8px;
+    left: 10vw;
+    height: 2px;
+    width: 80vw;
+
+    background-color: var(--white);
+}
