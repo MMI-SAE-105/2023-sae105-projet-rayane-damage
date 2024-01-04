@@ -10,10 +10,13 @@
     border-radius: 50%;
     flex-shrink: 0;
 }
+.project-card__img--frame::after{
+    content: url(../../../public/img/icones/hevagon.svg);
+    transform: rotate(90deg);
+}
 .project-card__img{
     object-fit: cover;
 }
-
 
 .project-card__title{
     font-family: var(--biorhyme);
