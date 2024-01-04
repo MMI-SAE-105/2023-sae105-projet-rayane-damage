@@ -7,8 +7,7 @@
 .project-card__img--frame{
     height: 140px;
     width: 140px;
-    border-radius: 50%;
-    flex-shrink: 0;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 .project-card__img--frame::after{
     content: url(../../../public/img/icones/hevagon.svg);
