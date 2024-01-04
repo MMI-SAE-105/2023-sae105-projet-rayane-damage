@@ -4,6 +4,17 @@
 }
 
 
+.project-card__img--frame{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.project-card__img{
+    object-fit: cover;
+}
+
+
 .project-card__title{
     font-family: var(--biorhyme);
     font-weight: 300;
