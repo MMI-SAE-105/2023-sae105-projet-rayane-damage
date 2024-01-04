@@ -36,3 +36,4 @@ Soyez attentifs à l'ordre d'import :
 /* Components */
 @import url(components/menu.css);
 @import url(components/card.css);
+@import url(components/project-card.css);

@@ -1,0 +1,21 @@
+.project-card{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.project-card__title{
+    font-family: var(--biorhyme);
+    font-weight: 300;
+    font-size: var(--heading);
+    line-height: 1.1;
+    letter-spacing: var(--l15);
+}
+.project-card__subtitle{
+    font-family: var(--syncopate);
+    font-size: var(--button);
+    font-weight: 700;
+    letter-spacing: var(--btn);
+    color: var(--white);
+    text-transform: uppercase;
+}
