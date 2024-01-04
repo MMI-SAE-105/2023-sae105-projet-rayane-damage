@@ -41,18 +41,18 @@
 }
 
 
-.glossary{
+.sec-content{
     margin-left: var(--space2x);
     display: flex;
     flex-direction: column;
     gap: 3vh;
 }
-.glossary__item__title{
+.item__title{
     color: var(--tonique-2);
     font-weight: 700;
     margin: 0;
     margin-left: var(--space2x);
 }
-.glossary__item__content{
+.item__content{
     margin: 0;
 }

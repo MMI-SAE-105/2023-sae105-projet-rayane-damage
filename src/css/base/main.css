@@ -26,6 +26,9 @@ em {
 .gl__link--dark{
   color: var(--dominante-dark);
 }
+.gl__link--light{
+  color: var(--tonique-2);
+}
 
 /* Les règles typographiques générales des titres */
 h1,
