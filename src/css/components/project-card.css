@@ -1,6 +1,9 @@
 .project-card{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
+    width: 96vw;
+    margin: var(--space1x) 0px;
 }
 
 
@@ -11,9 +14,6 @@
 }
 .project-card__img{
     object-fit: cover;
-}
-.project-card__img::after{
-    content: url(../../../public/img/icones/hevagon.svg);
 }
 .project-card__title{
     font-family: var(--biorhyme);

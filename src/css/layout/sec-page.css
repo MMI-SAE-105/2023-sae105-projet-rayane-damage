@@ -1,7 +1,7 @@
 .sec-page{
     height: 100vh;
-    background-color: var(--dominante);
     background: linear-gradient(0deg, var(--dominante-dark) 7%, var(--dominante) 100%);
+    overflow-x: hidden;
 }
 .sec-page::before{
     content: url(../../../public/img/img/pattern-big-4.svg);
