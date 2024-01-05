@@ -11,6 +11,7 @@
     height: 140px;
     width: 140px;
     clip-path: polygon(25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%, 0% 50%);
+    aspect-ratio: 1 / 1;
 }
 .project-card__img{
     object-fit: cover;
@@ -21,6 +22,7 @@
     font-size: var(--heading);
     line-height: 1.1;
     letter-spacing: var(--l15);
+    padding: 0px 4px;
 }
 .project-card__subtitle{
     font-family: var(--syncopate);
