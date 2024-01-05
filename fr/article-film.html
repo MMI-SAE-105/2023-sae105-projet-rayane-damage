@@ -4,60 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Across the Spider-Web</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 
 <body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
   <header class="header">
-      <div class="header__start">
-          <a href="index.html">
-              <img 
-              src="public/img/icones/Site logo.png" 
-              alt="Logo du site"
-              class="header__logo"
-              />
-          </a>
-      </div>
+    <div class="header__start">
+        <a href="index.html">
+            <img 
+            src="../public/img/icones/Site logo.png" 
+            alt="Logo du site"
+            class="header__logo"
+            />
+        </a>
+    </div>
 
-      <div class="header__end">
-          <button class="header__lang">
-              <img 
-              src="public/img/icones/fr-en.png" 
-              alt="logo passage anglais-français">
-          </button>
-          <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
-              <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
-          </button>
+    <div class="header__end">
+        <button class="header__lang">
+            <img 
+            src="../public/img/icones/fr-en.png" 
+            alt="logo passage anglais-français">
+        </button>
+        <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
+            <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+        </button>
 
-          <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
-                </li>
-              </ul>
-          </nav>
-      </div>
-  </header>
+        <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 
     <main>
       <header class="art__header">
         <h1 class="art__title">Un <em class="title--em">film</em> à l'identité inoubliable</h1>
-        <img class="art__img art__img--frame" src="public/img/img/film-0.jpg" alt="affiche du film">
+        <img class="art__img art__img--frame" src="../public/img/img/film-0.jpg" alt="affiche du film">
         <div class="art__infos">
           <h3 class="art__info--text">Publié le : 18/10/2023</h3>
           <h3 class="art__info--text">Temps de lecture : 4 min</h3>
@@ -88,7 +88,7 @@
 
       <div class="art__paragraph">
         <figure class="art__figure">
-          <img class="art__img art__img--frame" src="public/img/img/film-1.png" alt="">
+          <img class="art__img art__img--frame" src="../public/img/img/film-1.png" alt="">
           <figcaption class="art__img--caption"></figcaption>
         </figure>
         <h2 class="subtitle" >Une multitude de styles</h2>
@@ -101,7 +101,7 @@
 
       <div class="art__paragraph white-text">
         <figure class="art__figure">
-          <img class="art__img art__img--frame" src="public/img/img/film-2.jpg" alt="">
+          <img class="art__img art__img--frame" src="../public/img/img/film-2.jpg" alt="">
           <figcaption class="art__img--caption"></figcaption>
         </figure>
         <h2 class="subtitle white-text">Une identité inoubliable</h2>
@@ -109,7 +109,7 @@
           distinction entre les différents univers exploitent toutes les possibilités et tous les avantages offerts par l'animation et donnent au film une identité unique. C'est d'ailleurs surement cette dernière qui sera la raison pour laquelle on se souviendra de Miles Morales.
         </p>
         <figure class="art__figure">
-          <img class="art__img art__img--frame" src="public/img/img/film-3.jpg" alt="">
+          <img class="art__img art__img--frame" src="../public/img/img/film-3.jpg" alt="">
           <figcaption class="art__img--caption"></figcaption>
         </figure>
       </div>
@@ -118,7 +118,7 @@
 
 
       <h3 class="media-text white-text">bande annonce officielle :</h3>
-      <video class="video trailer" src="public/video/trailer.mp4" poster="public/img/img/poster-trailer.jpg" controls></video>
+      <video class="video trailer" src="../public/video/trailer.mp4" poster="../public/img/img/poster-trailer.jpg" controls></video>
 
       
       <h3 class="media-text white-text">les autres films spiderman :</h3>
@@ -126,61 +126,61 @@
         <ul class="gallery__content">
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-1" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-1" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-2" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-2" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-3" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-3" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-4" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-4" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-5" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-5" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-6" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-6" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-7" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-7" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-8" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-8" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-9" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-9" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
           <li class="gallery__item item">
             <figure>
-              <img class="gallery__img" src="public/img/img/gall-10" alt="">
+              <img class="gallery__img" src="../public/img/img/gall-10" alt="">
               <figcaption class="gallery__img--caption"></figcaption>
             </figure>
           </li>
@@ -201,7 +201,7 @@
       </ul>
       <span class="footer__bar"></span>
       <a href="#" class="footer__logo">
-        <img src="public/img/icones/Site logo big.png" alt="logo du site">
+        <img src="../public/img/icones/Site logo big.png" alt="logo du site">
       </a>
       <div class="footer__text">
         <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>

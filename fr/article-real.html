@@ -4,60 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Across the Spider-Web</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 
 <body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
   <header class="header">
-      <div class="header__start">
-          <a href="index.html">
-              <img 
-              src="public/img/icones/Site logo.png" 
-              alt="Logo du site"
-              class="header__logo"
-              />
-          </a>
-      </div>
+    <div class="header__start">
+        <a href="index.html">
+            <img 
+            src="../public/img/icones/Site logo.png" 
+            alt="Logo du site"
+            class="header__logo"
+            />
+        </a>
+    </div>
 
-      <div class="header__end">
-          <button class="header__lang">
-              <img 
-              src="public/img/icones/fr-en.png" 
-              alt="logo passage anglais-français">
-          </button>
-          <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
-              <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
-          </button>
+    <div class="header__end">
+        <button class="header__lang">
+            <img 
+            src="../public/img/icones/fr-en.png" 
+            alt="logo passage anglais-français">
+        </button>
+        <button class="header__menu-btn menu-btn" @click="menuOpen =! menuOpen" >
+            <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+        </button>
 
-          <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
-                </li>
-              </ul>
-          </nav>
-      </div>
-  </header>
+        <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 
     <main>
       <header class="art__header">
         <h1 class="art__title">Un trio de réalisateurs de <em class="title--em">talent</em></h1>
-        <img class="art__img art__img--frame" src="public/img/img/real-0.jpg" alt="">
+        <img class="art__img art__img--frame" src="../public/img/img/real-0.jpg" alt="">
         <div class="art__infos">
           <h3 class="art__info--text">Publié le : 18/10/2023</h3>
           <h3 class="art__info--text">Temps de lecture : 4 min</h3>
@@ -73,7 +73,7 @@
 
       <div class="art__paragraph ">
         <figure class="art__figure art__real">
-            <img class="art__portrait art__portrait--frame" src="public/img/img/real-1.jpg" alt="Justin K. Thompson">
+            <img class="art__portrait art__portrait--frame" src="../public/img/img/real-1.jpg" alt="Justin K. Thompson">
             <figcaption class="art__portrait--caption">Justin K. Thompson</figcaption>
         </figure>
         <p class="art__text">
@@ -84,7 +84,7 @@
 
       <div class="art__paragraph ">
         <figure class="art__figure art__real">
-            <img class="art__portrait art__portrait--frame" src="public/img/img/real-2.jpg" alt="Kemp Powers">
+            <img class="art__portrait art__portrait--frame" src="../public/img/img/real-2.jpg" alt="Kemp Powers">
             <figcaption class="art__portrait--caption">Kemp Powers</figcaption>
         </figure>
         <p class="art__text">
@@ -97,7 +97,7 @@
 
       <div class="art__paragraph ">
         <figure class="art__figure art__real">
-            <img class="art__portrait art__portrait--frame" src="public/img/img/real-3.jpg" alt="Joaquim Dos Santos">
+            <img class="art__portrait art__portrait--frame" src="../public/img/img/real-3.jpg" alt="Joaquim Dos Santos">
             <figcaption class="art__portrait--caption">Joaquim Dos Santos</figcaption>
         </figure>
         <p class="art__text">
@@ -109,7 +109,7 @@
       <span class="body__bg body__bg--red"></span>
       <div class="art__paragraph white-text">
         <figure class="art__figure">
-          <img class="art__img art__img--frame" src="public/img/img/image 4 real.jpg" alt="">
+          <img class="art__img art__img--frame" src="../public/img/img/image 4 real.jpg" alt="">
           <figcaption class="art__img--caption"></figcaption>
         </figure>
         <h2 class="subtitle white-text" >Un trio complémentaire</h2>
@@ -127,7 +127,7 @@
       </ul>
       <span class="footer__bar"></span>
       <a href="#" class="footer__logo">
-        <img src="public/img/icones/Site logo big.png" alt="logo du site">
+        <img src="../public/img/icones/Site logo big.png" alt="logo du site">
       </a>
       <div class="footer__text">
         <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
