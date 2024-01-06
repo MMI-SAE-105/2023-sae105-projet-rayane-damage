@@ -16,6 +16,7 @@
 .carrousel__img{
     height: 80%;
     aspect-ratio: 1/1;
+    margin: 0px -16px;
     flex: none;
     scroll-snap-align: start;
 }
