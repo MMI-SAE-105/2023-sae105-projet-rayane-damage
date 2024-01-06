@@ -129,7 +129,7 @@
               </div>
               <div id="ecran-4" class="carrousel__img">
                 <figure>
-                    <img src="../public/img/img/fri-4.jpg.jpg" alt="Poste à essence Socony-Vaccum">
+                    <img src="../public/img/img/fri-4.jpg" alt="Poste à essence Socony-Vaccum">
                     <figcaption class="carrousel__img--caption">Poste à essence Socony-Vaccum</figcaption>
                 </figure>
             </div>
@@ -146,21 +146,6 @@
                 </figure>
             </div>
           </div>
-
-          <ul class="caroussel__links">
-              <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
-                  &lt;
-              </button>
-
-              <li><a href="#ecran-1" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-1'}"><span class="caroussel__indic"></span></a></li>
-              <li><a href="#ecran-2" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-2'}"><span class="caroussel__indic"></span></a></li>
-              <li><a href="#ecran-3" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-3'}"><span class="caroussel__indic"></span></a></li>
-
-              <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--suiv" aria-label="slide suiv">
-                  >
-              </button>
-          </ul>
-
       </carrousel>
 
     </main>
