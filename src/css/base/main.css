@@ -105,3 +105,6 @@ uniquement accessible aux lecteurs vocaux (sr = screen reader) */
 .white-text{
   color: var(--white);
 }
+.yell-text{
+  color: var(--tonique-2);
+}
