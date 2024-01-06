@@ -90,7 +90,7 @@
         
         <h3 class="media-text white-text">les autres films spiderman :</h3>
 
-
+        
         <span class="body__bg body__bg--blue"></span>
 
         <section class="card">
@@ -105,7 +105,64 @@
           <a href=article-livr.html class="card__button">plus d'infos</a>
         </section>
 
+
         <h3 class="media-text">autres apparitions de miles dans les comics :</h3>
+        <carrousel x-data="{hrefCourant: '#ecran-1',}">
+          <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+              <div id="ecran-1" class="carrousel__img">
+                  <figure>
+                      <img src="../public/img/img/fri-1.jpg" alt="Poste à essence Socony-Vaccum">
+                      <figcaption class="carrousel__img--caption">Poste à essence Socony-Vaccum</figcaption>
+                  </figure>
+              </div>
+              <div id="ecran-2" class="carrousel__img">
+                  <figure>
+                      <img src="../public/img/img/fri-2.webp" alt="Maison du peuple, Clichy">
+                      <figcaption>Maison du peuple, Clichy</figcaption>
+                  </figure>
+              </div>
+              <div id="ecran-3" class="carrousel__img">
+                  <figure>
+                      <img src="../public/img/img/fri-3.webp" alt="École de Croismare">
+                      <figcaption class="carrousel__img--caption">École de Croismare</figcaption>
+                  </figure>
+              </div>
+              <div id="ecran-4" class="carrousel__img">
+                <figure>
+                    <img src="../public/img/img/fri-4.jpg.jpg" alt="Poste à essence Socony-Vaccum">
+                    <figcaption class="carrousel__img--caption">Poste à essence Socony-Vaccum</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-5" class="carrousel__img">
+                <figure>
+                    <img src="../public/img/img/fri-5.jpg" alt="Maison du peuple, Clichy">
+                    <figcaption>Maison du peuple, Clichy</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-6" class="carrousel__img">
+                <figure>
+                    <img src="../public/img/img/fri-6.jpg" alt="École de Croismare">
+                    <figcaption class="carrousel__img--caption">École de Croismare</figcaption>
+                </figure>
+            </div>
+          </div>
+
+          <ul class="caroussel__links">
+              <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
+                  &lt;
+              </button>
+
+              <li><a href="#ecran-1" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-1'}"><span class="caroussel__indic"></span></a></li>
+              <li><a href="#ecran-2" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-2'}"><span class="caroussel__indic"></span></a></li>
+              <li><a href="#ecran-3" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-3'}"><span class="caroussel__indic"></span></a></li>
+
+              <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--suiv" aria-label="slide suiv">
+                  >
+              </button>
+          </ul>
+
+      </carrousel>
+
     </main>
 
 
