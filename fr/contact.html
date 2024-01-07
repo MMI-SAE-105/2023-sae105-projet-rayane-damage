@@ -55,11 +55,24 @@
 
 
     <main class="sec-page sec-content">
-        <h1 class="sec-page__title">à propos</h1>
+        <h1 class="sec-page__title">me contacter</h1>
 
-        <p class="item__content white-text">      Bonjour, je m’appelle <strong>Rayane Damage</strong> et je suis étudiant en <a href="mmimontbeliard.com" class="gl__link--light"><strong>BUT MMI</strong> à Montbéliard</a>. Ce site est mon projet de première année. Le thème était <strong>« réplique »</strong> et j’ai choisi <strong>« être Spiderman c’est faire des sacrifices »</strong> du film <em>Spiderman : Across the spider-verse</em>. </p>
-        <p class="item__content white-text">      Je l’ai choisi parce que j’aime beaucoup l’<strong>aspect visuel unique du film</strong> et je savais que j’avais des choses à dire dessus. De plus, je trouvais la réplique vraiment intéressante à analyser. J’ai essayé de donner au site une identité visuelle proche de celle du film, principalement au moment où Miles apprend l’existence des évènements canevas et où Miguel prononce la réplique pour rester encore plus dans le thème.</p>
 
+        <form class="form" action="">
+            <div class="form__element">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" name="email" type="text" required>
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="objet">Objet</label>
+                <input class="form__input" name="objet" type="text" required>
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea> 
+            </div>
+            <input class="form__btn" type="button" value="envoyer">
+        </form>
     </main>
 
 
