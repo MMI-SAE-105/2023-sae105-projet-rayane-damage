@@ -13,10 +13,10 @@
 }
 
 .hero__text {
-    position: relative;
+    position: absolute;
     color: var(--white);
     width: 60vw;
-    top: 50vw;
+    top: 20vw;
     z-index: 1;
 
     text-align: center;
