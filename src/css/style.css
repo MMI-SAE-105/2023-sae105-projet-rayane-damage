@@ -32,6 +32,7 @@ Soyez attentifs à l'ordre d'import :
 @import url(layout/bg.css);
 @import url(layout/article.css);
 @import url(layout/sec-page.css);
+@import url(layout/contact.css);
 
 /* Components */
 @import url(components/menu.css);
