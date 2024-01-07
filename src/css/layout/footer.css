@@ -1,13 +1,14 @@
 .footer {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
     color: var(--white);
 
-    visibility: hidden;
-
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
     background: linear-gradient(0deg, var(--dominante-dark) 35%, var(--dominante) 100%);
-    height: 470px;
+    height: 450px;
+    top: 64px;
 }
 .footer__start{
     z-index: 1;
@@ -43,7 +44,11 @@
     padding-right: var(--space3x);
 }
 
-
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    margin: var(--space1x) var(--space2x);
+}
 .footer__credits,
 .footer__legal-mentions{
     position: relative;
