@@ -22,11 +22,11 @@
     </div>
 
     <div class="header__end">
-        <button class="header__lang">
-            <img 
-            src="../public/img/icones/fr-en.png" 
-            alt="logo passage anglais-français">
-        </button>
+      <a class="header__lang" href="../en/article-real.html">
+        <img 
+        src="../public/img/icones/fr-en.png" 
+        alt="logo passage anglais-français">
+    </a>
         <button class="header__menu-btn menu-btn" @click.outside="menuOpen=false" @click="menuOpen =! menuOpen" >
             <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
         </button>
