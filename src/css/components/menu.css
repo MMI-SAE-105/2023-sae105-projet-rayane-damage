@@ -104,3 +104,7 @@
 
     transform: rotate(90deg);
 }
+.header__lang{
+    display: inline-block;
+    align-self: center;
+}
