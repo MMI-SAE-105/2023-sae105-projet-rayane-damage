@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une réplique qui implique des sacrifices</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+  <header class="header">
+    <div class="header__start">
+        <a href="index.html">
+            <img 
+            src="../public/img/icones/Site logo.png" 
+            alt="Logo du site"
+            class="header__logo"
+            />
+        </a>
+    </div>
+
+    <div class="header__end">
+        <button class="header__lang">
+            <img 
+            src="../public/img/icones/fr-en.png" 
+            alt="logo passage anglais-français">
+        </button>
+        <button class="header__menu-btn menu-btn" @click.outside="menuOpen=false" @click="menuOpen =! menuOpen" >
+            <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+        </button>
+
+        <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <main>
+      <header class="art__header">
+        <h1 class="art__title">Une <em class="title--em">réplique</em> qui implique des sacrifices</h1>
+        <img class="art__img art__img--frame" src="../public/img/img/rep-0.webp" alt="">
+        <div class="art__infos">
+          <h3 class="art__info--text">Publié le : 18/10/2023</h3>
+          <h3 class="art__info--text">Temps de lecture : 4 min</h3>
+        </div>
+        <p class="art__chapo">      « Être Spiderman, c'est faire des sacrifices ». Cette réplique passée inaperçue pour la plupart des personnes est en fait la plus intéressante du film Spiderman : Across the spider-verse, mais en quoi ?</p>
+      </header>
+
+      <div class="art__paragraph">
+        <p class="art__text">      Les évènements canevas, ces moments inéluctables de la vie d'un <a href="glossary.html" class="gl__link">Spider-héro</a> qui le font avancer moralement et devenir plus fort. C'est au moment où le protagoniste, Miles Morales en prend connaissance que Miguel O'hara (<em>Spiderman 2099</em>) prononcera : <strong>« Être Spiderman, c'est faire des sacrifices. C'est notre mission »</strong> , une réplique pleine de subtilité qui démontre bien l'attention au détail dans la réalisation du film.
+        </p>
+      </div>
+
+
+      <div class="art__paragraph">
+        <h2 class="subtitle" >Une réplique significative</h2>
+        <p class="art__text">
+            En effet, vous l'avez peut-être déjà remarqué mais cette réplique porte une structure familière que tout fan de Spiderman saurait reconnaître : elle reprend la très célèbre phrase de l'oncle Ben : « un grand pouvoir implique de grandes responsabilités ». Cependant, dans
+            la version de Miguel, le grand pouvoir c'est être Spiderman et les grandes responsabilités se
+            manifestent par les sacrifices, la mission. La similitude est d'autant plus intéressante que,
+            bien qu'il ne soit ni son mentor, ni son oncle, Miguel est comme une figure paternelle pour
+            Miles. En effet, tout au long du film il le traite lui et les autres <a href="glossary.html" class="gl__link">Spider-héros</a> comme des
+            enfants. Il essaie de leur imposer son point de vue, ses idéaux et ses principes sous prétexte
+            de protéger le <a href="glossary.html" class="gl__link">Spider-verse</a>.
+        </p>
+      </div>
+
+      <span class="body__bg body__bg--red"></span>
+      <div class="art__paragraph white-text">
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="../public/img/img/rep-1.webp" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle white-text" >Le psyché d'un antihéros</h2>
+        <p class="art__text">      Ceci découle d'un défaut principal dans sa vision des choses : il prend trop littéralement le conseil de l'oncle Ben. Son pouvoir étant immense (voyager entre les dimensions), il implique des responsabilités tout aussi grandes (protéger l'ensemble de ces dimensions), là où les <a href="glossary.html" class="gl__link--dark">Spider-héros</a> plus classiques se limitaient auparavant à une seule ville. Débordé par la lourde tâche de protéger le <a href="glossary.html" class="gl__link--dark">Spider-verse</a> dans son intégralité, Miguel reste un humain et sa conscience n'est pas capable de supporter de telles responsabilités sur une période aussi longue que sa vie ce qui, ajouté à la perte de sa famille, le rend mentalement instable.</p>
+      </div>
+
+
+      <span class="body__bg body__bg--blue"></span>
+
+
+      <div class="art__paragraph white-text">
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="../public/img/img/rep-2.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle white-text">Une réponse qui se fera attendre</h2>
+        <p class="art__text">      Ainsi, avec cette réplique, Miguel tente d'imposer sa vision des choses à Miles, qui est
+            de prendre ses responsabilités et de sacrifier des vies s'il le faut pour le bien et la stabilité du <a href="glossary.html">Spider-verse</a>. Cependant le film ne nous dit pas qui a raison et qui a tort, c'est une réponse qui résidera sûrement dans la suite directe : Beyond the Spider-verse qui devrait sortir en
+            2024.
+        </p>
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="../public/img/img/rep-3.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+      </div>
+
+      
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__start">
+        <ul class="footer__list">
+          <li> <a class="footer__item" href="glossary.html">glossaire</a> </li>
+          <li> <a class="footer__item" href="other_p.html">autres projets</a> </li>
+          <li> <a class="footer__item" href="about.html">à propos</a> </li>
+          <li> <a class="footer__item" href="contact.html">contact</a> </li>
+        </ul>
+        <span class="footer__bar"></span>
+        <a href="#" class="footer__logo">
+          <img src="../public/img/icones/Site logo big.png" alt="logo du site">
+        </a>
+      </div>
+
+      <div class="footer__text">
+        <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
+        <p class="footer__credits">Réalisé par Rayane Damage du groupe B2 <a href="#" class="footer__mailto">rayane.damage@edu.univ-fcomte.fr</a></p>
+      </div>  
+      <span class="footer__bg"></span>
+    </footer>
+</body>
+
+
+</html>

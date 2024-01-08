@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les origines de Miles Morales</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+  <header class="header">
+    <div class="header__start">
+        <a href="index.html">
+            <img 
+            src="../public/img/icones/Site logo.png" 
+            alt="Logo du site"
+            class="header__logo"
+            />
+        </a>
+    </div>
+
+    <div class="header__end">
+        <button class="header__lang">
+            <img 
+            src="../public/img/icones/fr-en.png" 
+            alt="logo passage anglais-français">
+        </button>
+        <button class="header__menu-btn menu-btn" @click.outside="menuOpen=false" @click="menuOpen =! menuOpen" >
+            <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+        </button>
+
+        <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <main>
+      <header class="art__header">
+        <h1 class="art__title">Les origines de<em class="title--em">Miles Morales</em></h1>
+        <img class="art__img art__img--frame" src="../public/img/img/livr-0.jpg" alt="">
+        <div class="art__infos">
+          <h3 class="art__info--text">Publié le : 18/10/2023</h3>
+          <h3 class="art__info--text">Temps de lecture : 5 min</h3>
+        </div>
+        <p class="art__chapo">      Nous sommes nombreux à avoir connu Miles Morales par le biais des films d'animation récemment sortis le mettant en scène. Cependant, Miles est un personnage dont les origines remontent aux années 2010.</p>
+      </header>
+
+      <div class="art__paragraph">
+        <p class="art__text">      Le numéro 4 d'<em>Ultimate Comics</em> est un véritable trésor pour tout fan de <a href="glossary.html" class="gl__link">comics</a> contemporain. Publié en 2011, cet ouvrage est le fruit de la collaboration de deux talents de
+            l'industrie des <a href="glossary.html" class="gl__link">comics</a>, à savoir <em>Brian Michael Bendis</em> qui à écrit le scénario et <em>Sara Pichelli</em> qui a réalisé les illustrations. Cette équipe a su captiver les lecteurs avec un récit se déroulant dans l'univers alternatif de Marvel : l'univers Ultimate. Ce dernier a été introduit par Marvel Comics dans les années 2000 dans le but de moderniser certains de leurs super-héros
+            emblématiques, dont <em>Spiderman</em>. Cette continuité alternative permettait aux auteurs de <a href="glossary.html" class="gl__link">comic-books</a> d'explorer de nouvelles perspectives, de repenser les origines des super-héros et de créer un environnement plus ancré dans le XXIe siècle. Le numéro 4 de cette série s'inscrit dans cet esprit et propose une version alternative de <em>Spiderman</em>, Miles Morales.
+        </p>
+      </div>
+
+
+      <figure class="art__figure">
+        <img class="art__img art__img--frame" src="../public/img/img/livr-1.jpg" alt="">
+        <figcaption class="art__img--caption"></figcaption>
+      </figure>
+
+
+      <div class="art__paragraph">
+        <h2 class="subtitle" >La Genèse de Miles</h2>
+        <p class="art__text">
+            Au cœur de cette histoire se trouve le personnage maintenant emblématique de
+            Miles Morales, un adolescent new-yorkais mordu par une araignée radioactive venant d'une autre dimension. La dualité en tant qu'adolescent ordinaire et super-héros en devenir est au centre de cette aventure tout comme avec Peter Parker en 1963. Mais ce qui rend le numéro 4 d'<em>Ultimate Comics</em> encore plus important, c'est la réception de Miles Morales par les médias extérieurs et par le public. En effet, l'introduction de ce personnage a été saluée par la diversité qu'il apporte à l'univers Marvel et il est devenu un modèle pour de nombreux lecteurs issus de milieux variés, prouvant que tout le monde peut être un super-héros.
+        </p>
+      </div>
+
+      <span class="body__bg body__bg--red"></span>
+      <div class="art__paragraph white-text">
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="../public/img/img/livr-2.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle white-text" >Un personnage Cross-Médias</h2>
+        <p class="art__text">      Depuis sa première apparition, Miles a connu un succès phénoménal et a conquis bien d'autres médias. En effet, il apparaît désormais dans sa propre série de comics : <em>Spiderman : Miles Morales</em>, où il poursuit sa quête en tant que <em>Spiderman</em> moderne. Mais Miles est également présent dans le paysage vidéo-ludique avec <em>Marvel's Spiderman : Miles Morales</em>, un jeu acclamé pour sa jouabilité et sa narration de qualité. Mais la popularité de Miles Morales a atteint son paroxysme depuis le film d'animation <em>Spiderman : New generation</em>, qui a reçu nombre d'éloges et a remporté l'Oscar du meilleur film d'animation en 2019. Il explore non seulement les aventures de Miles, mais également de plusieurs <a href="glossary.html" class="gl__link--dark">Spider-héros</a> de différents univers formant le <a href="glossary.html" class="gl__link--dark">Spider-verse</a>. Que la suite <em>Across the spider-verse</em> reprend avec encore plus de profondeur.</p>
+      </div>
+
+
+      <div class="art__paragraph white-text">
+        <figure class="art__figure">
+          <img class="art__img art__img--frame" src="../public/img/img/livr-3.jpg" alt="">
+          <figcaption class="art__img--caption"></figcaption>
+        </figure>
+        <h2 class="subtitle white-text">Un phénomène de grande envergure</h2>
+        <p class="art__text">      On peut en conclure que le numéro 4 de <em>Ultimate Comics</em> a donné naissance à un phénomène culturel au travers de Miles Morales, qui a su tisser sa toile au travers de divers médias. Cette aventure remarquable est un <em>must-have</em> pour tout fan de <a href="glossary.html" class="gl__link">comics</a> soucieux de découvrir les origines d'un super-héros qui incarne la diversité et l'inspiration. 
+        </p>
+        <p class="art__text">      Bien sûr, les apparitions de Miles dans les <a href="glossary.html" class="gl__link">comics</a> ne s'arrêtent pas là, en effet, il apparaît aussi seul (ou accompagné d'autres <a href="glossary.html" class="gl__link--dark">Spider-héros</a>) dans d'autres <a href="glossary.html" class="gl__link">comics</a> :</p>
+      </div>
+      
+      <carrousel x-data="{hrefCourant: '#ecran-1',}">
+        <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+            <div id="ecran-1" class="carrousel__img">
+                <figure>
+                    <a href="https://www.originalcomics.fr/panini-comics/37769-miles-morales-the-ultimate-spider-man-t02-omnibus-vf-9791039115698.html">
+                      <img src="../public/img/img/fri-1.webp" alt="Spiderman : Miles Morales">
+                    </a>
+                    <figcaption class="carrousel__img--caption">Spiderman : Miles Morales</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-2" class="carrousel__img">
+                <figure>
+                    <a href="https://www.originalcomics.fr/panini-comics/29975-miles-morales-the-ultimate-spider-man-t01-omnibus-vf-9791039110990.html">
+                      <img src="../public/img/img/fri-2.webp" alt="Miles Morales : The Ultimate spiderman">
+                    </a>
+                    
+                    <figcaption class="carrousel__img--caption"> Miles Morales : The Ultimate ...</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-3" class="carrousel__img">
+                <figure>
+                    <a href="https://www.originalcomics.fr/comics-vf/23421-amazing-spider-man-tome-2-spider-verse-vf-deluxe-9782809496291.html">
+                      <img src="../public/img/img/fri-3.webp" alt="Spider verse">
+                    </a>
+                    <figcaption class="carrousel__img--caption">Spider-Verse</figcaption>
+                </figure>
+            </div>
+            <div id="ecran-4" class="carrousel__img">
+              <figure>
+                  <a href="https://www.originalcomics.fr/panini-comics/21491-spider-geddon-vf-9782809491449.html">
+                    <img src="../public/img/img/fri-4.webp" alt="Spider-Geddon">
+                  </a>
+                  <figcaption class="carrousel__img--caption">Spider-Geddon</figcaption>
+              </figure>
+          </div>
+          <div id="ecran-5" class="carrousel__img">
+              <figure>
+                  <a href="https://www.marvel.com/comics/issue/94972/spider-men_worlds_collide_trade_paperback">
+                    <img src="../public/img/img/fri-5.webp" alt="Spider-Men">
+                  </a>
+                  <figcaption class="carrousel__img--caption">Spider-Men</figcaption>
+              </figure>
+          </div>
+          <div id="ecran-6" class="carrousel__img">
+              <figure>
+                  <a href="https://www.marvel.com/comics/series/19648/secret_wars_2015_-_2016">
+                    <img src="../public/img/img/fri-6.webp" alt="Secret Wars">
+                  </a>
+                  <figcaption class="carrousel__img--caption">Secret Wars</figcaption>
+              </figure>
+          </div>
+        </div>
+    </carrousel>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__start">
+        <ul class="footer__list">
+          <li> <a class="footer__item" href="glossary.html">glossaire</a> </li>
+          <li> <a class="footer__item" href="other_p.html">autres projets</a> </li>
+          <li> <a class="footer__item" href="about.html">à propos</a> </li>
+          <li> <a class="footer__item" href="contact.html">contact</a> </li>
+        </ul>
+        <span class="footer__bar"></span>
+        <a href="#" class="footer__logo">
+          <img src="../public/img/icones/Site logo big.png" alt="logo du site">
+        </a>
+      </div>
+
+      <div class="footer__text">
+        <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
+        <p class="footer__credits">Réalisé par Rayane Damage du groupe B2 <a href="#" class="footer__mailto">rayane.damage@edu.univ-fcomte.fr</a></p>
+      </div>  
+      <span class="footer__bg"></span>
+    </footer>
+</body>
+
+
+</html>

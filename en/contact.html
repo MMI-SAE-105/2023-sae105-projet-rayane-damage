@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me contacter</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'" class="sec-page" >
+  <header class="header">
+    <div class="header__start">
+        <a href="index.html">
+            <img 
+            src="../public/img/icones/Site logo.png" 
+            alt="Logo du site"
+            class="header__logo"
+            />
+        </a>
+    </div>
+
+    <div class="header__end">
+        <button class="header__lang">
+            <img 
+            src="../public/img/icones/fr-en.png" 
+            alt="logo passage anglais-français">
+        </button>
+        <button class="header__menu-btn menu-btn" @click.outside="menuOpen=false" @click="menuOpen =! menuOpen" >
+            <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+        </button>
+
+        <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <main class="sec-page sec-content">
+        <h1 class="sec-page__title">me contacter</h1>
+
+
+        <form class="form" action="">
+            <div class="form__element">
+                <label class="form__label" for="email">Email :</label>
+                <input class="form__input" name="email" type="text" required>
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="objet">Objet :</label>
+                <input class="form__input" name="objet" type="text" required>
+            </div>
+            <div class="form__element">
+                <label class="form__label" for="message">Message :</label>
+                <textarea class="form__area" name="message" id="message" cols="30" rows="10"></textarea> 
+            </div>
+            <input class="form__btn" type="button" value="envoyer">
+        </form>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__start">
+        <ul class="footer__list">
+          <li> <a class="footer__item" href="glossary.html">glossaire</a> </li>
+          <li> <a class="footer__item" href="other_p.html">autres projets</a> </li>
+          <li> <a class="footer__item" href="about.html">à propos</a> </li>
+          <li> <a class="footer__item" href="contact.html">contact</a> </li>
+        </ul>
+        <span class="footer__bar"></span>
+        <a href="#" class="footer__logo">
+          <img src="../public/img/icones/Site logo big.png" alt="logo du site">
+        </a>
+      </div>
+
+      <div class="footer__text">
+        <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
+        <p class="footer__credits">Réalisé par Rayane Damage du groupe B2 <a href="#" class="footer__mailto">rayane.damage@edu.univ-fcomte.fr</a></p>
+      </div>  
+      <span class="footer__bg"></span>
+    </footer>
+</body>
+
+
+</html>
