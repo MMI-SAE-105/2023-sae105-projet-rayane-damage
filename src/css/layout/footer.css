@@ -22,7 +22,7 @@
     flex-direction: column;
     gap: 10px;
     height: 164px;
-    width: 56vw;
+    width: 58vw;
 }
 .footer__item{
     font-family: var(--syncopate);

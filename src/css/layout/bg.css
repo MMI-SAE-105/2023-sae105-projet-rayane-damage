@@ -3,7 +3,7 @@
     left: 0;
     z-index: -2;
     width: 100vw;
-    height: 46%;
+    height: 56%;
     background-color: var(--tonique-alt1);
 }
 .body__bg::before{
