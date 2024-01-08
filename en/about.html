@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+
+<body x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'" class="sec-page" >
+  <header class="header">
+    <div class="header__start">
+        <a href="index.html">
+            <img 
+            src="../public/img/icones/Site logo.png" 
+            alt="Logo du site"
+            class="header__logo"
+            />
+        </a>
+    </div>
+
+    <div class="header__end">
+      <a class="header__lang" href="../en/about.html">
+        <img 
+        src="../public/img/icones/fr-en.png" 
+        alt="logo passage anglais-français">
+    </a>
+        <button class="header__menu-btn menu-btn" @click.outside="menuOpen=false" @click="menuOpen =! menuOpen" >
+            <span :class="menuOpen ? 'menu-btn__bar--open' : 'menu-btn__bar' "></span>
+        </button>
+
+        <nav class="header__menu" :class="menuOpen ? 'menu--visible' : 'menu' ">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="article-rep.html">Une réplique qui implique des sacrifices</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-film.html">Un film à l'identité inoubliable</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-real.html">Un trio de réalisateurs de talent</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-mus.html">“Calling”, un message profond</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="article-livr.html">Les origines de Miles Morales</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <main class="sec-page sec-content">
+        <h1 class="sec-page__title">à propos</h1>
+
+        <p class="item__content white-text">      Bonjour, je m’appelle <strong>Rayane Damage</strong> et je suis étudiant en <a href="mmimontbeliard.com" class="gl__link--light"><strong>BUT MMI</strong> à Montbéliard</a>. Ce site est mon projet de première année. Le thème était <strong>« réplique »</strong> et j’ai choisi <strong>« être Spiderman c’est faire des sacrifices »</strong> du film <em>Spiderman : Across the spider-verse</em>. </p>
+        <p class="item__content white-text">      Je l’ai choisi parce que j’aime beaucoup l’<strong>aspect visuel unique du film</strong> et je savais que j’avais des choses à dire dessus. De plus, je trouvais la réplique vraiment intéressante à analyser. J’ai essayé de donner au site une identité visuelle proche de celle du film, principalement au moment où Miles apprend l’existence des évènements canevas et où Miguel prononce la réplique pour rester encore plus dans le thème.</p>
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__start">
+        <ul class="footer__list">
+          <li> <a class="footer__item" href="glossary.html">glossaire</a> </li>
+          <li> <a class="footer__item" href="other_p.html">autres projets</a> </li>
+          <li> <a class="footer__item" href="about.html">à propos</a> </li>
+          <li> <a class="footer__item" href="contact.html">contact</a> </li>
+        </ul>
+        <span class="footer__bar"></span>
+        <a href="#" class="footer__logo">
+          <img src="../public/img/icones/Site logo big.png" alt="logo du site">
+        </a>
+      </div>
+
+      <div class="footer__text">
+        <p class="footer__legal-mentions">Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com/"> département MMI de Montbéliard</a></p>
+        <p class="footer__credits">Réalisé par Rayane Damage du groupe B2 <a href="#" class="footer__mailto">rayane.damage@edu.univ-fcomte.fr</a></p>
+      </div>  
+      <span class="footer__bg"></span>
+    </footer>
+</body>
+
+
+</html>
