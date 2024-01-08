@@ -27,6 +27,16 @@
 .art__img{
     object-fit: cover;
 }
+.art__img--caption{
+    text-align: center;
+    font-weight: 400;
+    color: var(--gray2);
+}
+.art__img--caption-dark{
+    text-align: center;
+    font-weight: 400;
+    color: var(--gray1);
+}
 
 
 .art__infos{
