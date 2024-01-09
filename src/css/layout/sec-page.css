@@ -10,6 +10,14 @@
 
     transform: rotateZ(25deg);
 }
+.sec-content::after{
+    content: url(../../../public/img/img/pattern-big-4.svg);
+    position: absolute;
+    right: 107px;
+    top: 1324px;
+    transform: rotateZ(25deg) scale(2.5);
+    opacity: .25;
+}
 
 
 .sec-page__title{

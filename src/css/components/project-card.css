@@ -4,6 +4,7 @@
     position: relative;
     width: 96vw;
     margin: var(--space1x) 0px;
+    z-index: 2;
 }
 
 .project-card__container{
