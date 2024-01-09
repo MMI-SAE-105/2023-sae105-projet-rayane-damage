@@ -30,3 +30,17 @@
 .body__bg--red::before{
     content: url(../../../public/img/img/pattern-big-3.svg);
 }
+
+
+.end-bg__film{
+    height: 164vh;
+}
+.end-bg__rep{
+    height: 134vh;
+}
+.end-bg__mus{
+    height: 234vh;
+}
+.end-bg__real{
+    height: 96vh;
+}
