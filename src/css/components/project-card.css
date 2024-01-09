@@ -6,15 +6,31 @@
     margin: var(--space1x) 0px;
 }
 
-
-.project-card__img--frame{
+.project-card__container{
+    position: relative;
     height: 140px;
     width: 140px;
+    aspect-ratio: 1 / 1;
+}
+.project-card__img--frame{
+    position: absolute;
+    margin: 10px;
+    height: 110px;
+    width: 110px;
     clip-path: polygon(25% 7%, 75% 7%, 100% 50%, 75% 93%, 25% 93%, 0% 50%);
     aspect-ratio: 1 / 1;
 }
 .project-card__img{
     object-fit: cover;
+    z-index: 2;
+}
+.project-card__img--hexa{
+    position: absolute;
+    z-index: 2;
+    height: 140px;
+    width: 140px;
+    top: 0px;
+    right: 0px;
 }
 .project-card__title{
     font-family: var(--biorhyme);
