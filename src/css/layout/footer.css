@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-end;
     color: var(--white);
+    overflow: hidden;
 
     clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
     background: linear-gradient(0deg, var(--dominante-dark) 35%, var(--dominante) 100%);
@@ -57,4 +58,15 @@
     text-align: center;
     text-indent: 0%;
     color: var(--gray1);
+}
+
+.footer__bg{
+    position: absolute;
+    z-index: -1;
+    top: 121px;
+    left: -54px;
+    transform: rotate(30deg) scale(1.2);
+}
+.footer__bg::after{
+    content: url(../../../public/img/img/pattern-big-4.svg);
 }
