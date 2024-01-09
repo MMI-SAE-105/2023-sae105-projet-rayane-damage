@@ -1,13 +1,12 @@
 .sec-page{
-    height: 100vh;
     background: linear-gradient(0deg, var(--dominante-dark) 7%, var(--dominante) 100%);
     overflow-x: hidden;
 }
-.sec-page::before{
+.sec-content::before{
     content: url(../../../public/img/img/pattern-big-4.svg);
     position: absolute;
     right: -145px;
-    top: -230px;
+    top: -216px;
 
     transform: rotateZ(25deg);
 }
