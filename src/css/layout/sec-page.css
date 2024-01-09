@@ -2,6 +2,9 @@
     background: linear-gradient(0deg, var(--dominante-dark) 7%, var(--dominante) 100%);
     overflow-x: hidden;
 }
+.sec-content{
+    transform-style: preserve-3d;
+}
 .sec-content::before{
     content: url(../../../public/img/img/pattern-big-4.svg);
     position: absolute;
@@ -14,8 +17,8 @@
     content: url(../../../public/img/img/pattern-big-4.svg);
     position: absolute;
     right: 107px;
-    top: 1324px;
-    transform: rotateZ(25deg) scale(2.5);
+    top: 50%;
+    transform: rotateZ(25deg) scale(2.5) translateZ(-1px);
     opacity: .25;
 }
 
